@@ -15,5 +15,4 @@ define GLIB_BUILD_CMDS
 endef
 
 $(eval $(autotools-package))
-$(eval $(host-autotools-package))
 
