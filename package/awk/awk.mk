@@ -9,6 +9,7 @@ AWK_SITE = https://github.com/onetrueawk/awk.git
 AWK_SITE_METHOD=git
 AWK_GIT_SUBMODULES=YES
 AWK_LICENSE =
+AWK_DEPENDENCIES += bison
 
 ifeq ($(BR2_PACKAGE_LIBSIGSEGV),y)
 AWK_DEPENDENCIES += libsigsegv
