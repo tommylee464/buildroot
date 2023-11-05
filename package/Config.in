@@ -388,9 +388,23 @@ endif
 	source "package/weston/Config.in"
 	source "package/x11r7/Config.in"
 
+if BR2_PACKAGE_POLOFM
+menu "File Manager"
+	source "package/mktemp/Config.in"
+	source "package/pbzip2/Config.in"
+	source "package/glib/Config.in"
+	source "package/json-glib-dev/Config.in"
+	source "package/libimage-exiftool-perl/Config.in"
+	source "package/mediainfo/Config.in"
+	source "package/trash-cli/Config.in"
+	source "package/qemu-kvm/Config.in"
+	source "package/qemu-utils/Config.in"
+	source "package/fish/Config.in"
+endmenu
+endif
+
 comment "X applications"
 	depends on BR2_PACKAGE_XORG7
-
 	source "package/alsamixergui/Config.in"
 	source "package/apitrace/Config.in"
 	source "package/dillo/Config.in"
@@ -402,6 +416,7 @@ comment "X applications"
 	source "package/mupdf/Config.in"
 	source "package/nodm/Config.in"
 	source "package/pcmanfm/Config.in"
+	source "package/polofm/Config.in"
 	source "package/qt-webkit-kiosk/Config.in"
 	source "package/rdesktop/Config.in"
 	source "package/synergy/Config.in"
