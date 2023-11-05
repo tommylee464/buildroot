@@ -1,0 +1,2 @@
+config BR2_PACKAGE_LIBIMAGE_EXIFTOOL_PERL
+    bool "libimage-exiftool-perl"
