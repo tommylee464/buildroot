@@ -1,3 +1,2 @@
 config BR2_PACKAGE_TRASH_CLI
     bool "trash-cli"
-	
