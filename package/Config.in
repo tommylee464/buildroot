@@ -1,5 +1,4 @@
 menu "Target packages"
-
 	source "package/busybox/Config.in"
 	source "package/skeleton/Config.in"
 	source "package/skeleton-custom/Config.in"
@@ -390,6 +389,7 @@ endif
 
 if BR2_PACKAGE_POLOFM
 menu "File Manager"
+	source "package/awk/Config.in"
 	source "package/mktemp/Config.in"
 	source "package/pbzip2/Config.in"
 	source "package/glib/Config.in"
